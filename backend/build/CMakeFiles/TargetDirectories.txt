@@ -1,0 +1,3 @@
+/Users/codex/Developer/ContactManager/backend/build/CMakeFiles/ContactManager.dir
+/Users/codex/Developer/ContactManager/backend/build/CMakeFiles/edit_cache.dir
+/Users/codex/Developer/ContactManager/backend/build/CMakeFiles/rebuild_cache.dir
