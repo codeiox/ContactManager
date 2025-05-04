@@ -27,6 +27,10 @@ const Add = () => {
       await addContact(formData as ContactData);
       console.log("Contact added successfully");
       setFormData({ name: "", phone: "", email: "", tag: "" });
+      alert("Contact was sucessfully added.");
+      setTimeout(function () {
+        location.reload();
+      }, 3000);
     } catch (error) {
       console.error("Add contact error:", error);
     }

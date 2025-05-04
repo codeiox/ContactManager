@@ -11,5 +11,12 @@ export async function addContact(data: ContactData) {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data),
   });
-  return res.json(); // Returns response from backend
+
+  const contentType = res.headers.get("Content-Type");
+
+  if (contentType && contentType.includes("application/json")) {
+    return await res.json();
+  } else {
+    return res.text(); // fallback for plain text like "Contact added successfully"
+  }
 }

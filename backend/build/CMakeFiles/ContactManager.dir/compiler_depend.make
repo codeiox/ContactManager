@@ -3193,6 +3193,7 @@ CMakeFiles/ContactManager.dir/src/main.cpp.o: /Users/codex/Developer/ContactMana
   /Users/codex/Developer/ContactManager/backend/include/routes/AddContact.h \
   /Users/codex/Developer/ContactManager/backend/include/database/InsertContact.h \
   /Users/codex/Developer/ContactManager/backend/include/routes/AddContact.h \
+  /Users/codex/Developer/ContactManager/backend/include/routes/DisplayContect.h \
   /usr/local/mysql-connector-c++-9.3.0/include/jdbc/cppconn/build_config.h \
   /usr/local/mysql-connector-c++-9.3.0/include/jdbc/cppconn/callback.h \
   /usr/local/mysql-connector-c++-9.3.0/include/jdbc/cppconn/config.h \
@@ -3228,6 +3229,8 @@ CMakeFiles/ContactManager.dir/src/main.cpp.o: /Users/codex/Developer/ContactMana
 /usr/local/mysql-connector-c++-9.3.0/include/jdbc/cppconn/driver.h:
 
 /usr/local/mysql-connector-c++-9.3.0/include/jdbc/cppconn/build_config.h:
+
+/Users/codex/Developer/ContactManager/backend/include/routes/DisplayContect.h:
 
 /Users/codex/Developer/ContactManager/backend/include/database/InsertContact.h:
 
