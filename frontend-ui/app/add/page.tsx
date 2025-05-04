@@ -2,7 +2,11 @@
 import React from "react";
 import { useState } from "react";
 
+import { addContact } from "../lib/api/addContact";
+import { ContactData } from "../lib/types/contact";
+
 const Add = () => {
+  // Stores and updates the user's contact form input values
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -10,14 +14,22 @@ const Add = () => {
     tag: "",
   });
 
+  // Handles form submission by sending data to backend using addContact function
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Submitting contact: ", formData);
-    // TODO: send data to backend via fetch or axios
+    // TODO: send data to backend via fetch
+    try {
+      await addContact(formData as ContactData);
+      console.log("Contact added successfully");
+      setFormData({ name: "", phone: "", email: "", tag: "" });
+    } catch (error) {
+      console.error("Add contact error:", error);
+    }
   };
 
   return (

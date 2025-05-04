@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ContactManager.dir/main.cpp.o"
-  "CMakeFiles/ContactManager.dir/main.cpp.o.d"
+  "CMakeFiles/ContactManager.dir/src/Contact.cpp.o"
+  "CMakeFiles/ContactManager.dir/src/Contact.cpp.o.d"
+  "CMakeFiles/ContactManager.dir/src/main.cpp.o"
+  "CMakeFiles/ContactManager.dir/src/main.cpp.o.d"
   "ContactManager"
   "ContactManager.pdb"
 )

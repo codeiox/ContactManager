@@ -18,6 +18,19 @@ class Contact {
     Contact() = default;
     Contact(const std::string& name, const std::string& phone, const std::string& email, const std::string& tag);
 
+    // Setters
+    void SetName(std::string& name);
+    void SetPhone(std::string& phone);
+    void SetEmail(std::string& email);
+    void SetTag(std::string& tag);
+
+    // Getters
+    std::string GetName() const;
+    std::string GetPhone() const;
+    std::string GetEmail() const;
+    std::string GetTag() const;
+
+
     //Extend this class later
     // validate phonenumber
     // validate email

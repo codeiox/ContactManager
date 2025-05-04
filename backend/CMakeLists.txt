@@ -21,7 +21,8 @@ find_package(Python3 REQUIRED COMPONENTS Interpreter)
 #add definition for .env 
 add_definitions(-DENABLE_DOTENV)
 
-
+#include directories for .env 
+include_directories(${CMAKE_SOURCE_DIR}/include)
 #crow
 find_package(Threads REQUIRED)
 # C++ Crow framework
@@ -29,20 +30,18 @@ include_directories(${CMAKE_SOURCE_DIR}/Crow/include)
 # include path to asio dependency which crow depends on
 include_directories(${CMAKE_SOURCE_DIR}/asio/asio/include)
 
-
 #include path to mysql connector/c++
-include_directories(/usr/local/mysql-connector-c++-9.2.0/lib64)
-
+include_directories(/usr/local/mysql-connector-c++-9.3.0/lib64)
 # include path to mysql connector/c++
-include_directories(/usr/local/mysql/include)
-include_directories(/usr/local/mysql-connector-c++-9.2/include)
+include_directories(/usr/local/mysql-connector-c++-9.3.0/include/jdbc)
 
-
+#Source files
+file(GLOB_RECURSE SOURCES
+    src/*.cpp
+    )
 
 # add executable
-add_executable(${PROJECT_NAME}
-    main.cpp
-)
+add_executable(${PROJECT_NAME} ${SOURCES})
 
 
 #Add linker flags
@@ -53,7 +52,7 @@ elseif (CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
 endif()
 
 
-link_directories(/usr/local/mysql-connector-c++-9.2.0/lib64)
+link_directories(/usr/local/mysql-connector-c++-9.3.0/lib64)
 
 # Link libraries
 target_link_libraries(${PROJECT_NAME}
@@ -61,6 +60,7 @@ target_link_libraries(${PROJECT_NAME}
         Threads::Threads
         OpenSSL::SSL
         OpenSSL::Crypto
-        /usr/local/mysql-connector-c++-9.2.0/lib64/libmysqlcppconn.dylib
-        /usr/local/mysql-connector-c++-9.2.0/lib64/libmysqlcppconnx.dylib
+        /usr/local/mysql-connector-c++-9.3.0/lib64/libmysqlcppconn.dylib
+        /usr/local/mysql-connector-c++-9.3.0/lib64/libmysqlcppconnx.dylib
 )
+target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_20)
