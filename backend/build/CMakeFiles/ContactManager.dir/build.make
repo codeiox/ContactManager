@@ -72,35 +72,51 @@ include CMakeFiles/ContactManager.dir/flags.make
 CMakeFiles/ContactManager.dir/codegen:
 .PHONY : CMakeFiles/ContactManager.dir/codegen
 
-CMakeFiles/ContactManager.dir/main.cpp.o: CMakeFiles/ContactManager.dir/flags.make
-CMakeFiles/ContactManager.dir/main.cpp.o: /Users/codex/Developer/ContactManager/backend/main.cpp
-CMakeFiles/ContactManager.dir/main.cpp.o: CMakeFiles/ContactManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/codex/Developer/ContactManager/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ContactManager.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ContactManager.dir/main.cpp.o -MF CMakeFiles/ContactManager.dir/main.cpp.o.d -o CMakeFiles/ContactManager.dir/main.cpp.o -c /Users/codex/Developer/ContactManager/backend/main.cpp
+CMakeFiles/ContactManager.dir/src/Contact.cpp.o: CMakeFiles/ContactManager.dir/flags.make
+CMakeFiles/ContactManager.dir/src/Contact.cpp.o: /Users/codex/Developer/ContactManager/backend/src/Contact.cpp
+CMakeFiles/ContactManager.dir/src/Contact.cpp.o: CMakeFiles/ContactManager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/codex/Developer/ContactManager/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ContactManager.dir/src/Contact.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ContactManager.dir/src/Contact.cpp.o -MF CMakeFiles/ContactManager.dir/src/Contact.cpp.o.d -o CMakeFiles/ContactManager.dir/src/Contact.cpp.o -c /Users/codex/Developer/ContactManager/backend/src/Contact.cpp
 
-CMakeFiles/ContactManager.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ContactManager.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/codex/Developer/ContactManager/backend/main.cpp > CMakeFiles/ContactManager.dir/main.cpp.i
+CMakeFiles/ContactManager.dir/src/Contact.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ContactManager.dir/src/Contact.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/codex/Developer/ContactManager/backend/src/Contact.cpp > CMakeFiles/ContactManager.dir/src/Contact.cpp.i
 
-CMakeFiles/ContactManager.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ContactManager.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/codex/Developer/ContactManager/backend/main.cpp -o CMakeFiles/ContactManager.dir/main.cpp.s
+CMakeFiles/ContactManager.dir/src/Contact.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ContactManager.dir/src/Contact.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/codex/Developer/ContactManager/backend/src/Contact.cpp -o CMakeFiles/ContactManager.dir/src/Contact.cpp.s
+
+CMakeFiles/ContactManager.dir/src/main.cpp.o: CMakeFiles/ContactManager.dir/flags.make
+CMakeFiles/ContactManager.dir/src/main.cpp.o: /Users/codex/Developer/ContactManager/backend/src/main.cpp
+CMakeFiles/ContactManager.dir/src/main.cpp.o: CMakeFiles/ContactManager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/codex/Developer/ContactManager/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ContactManager.dir/src/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ContactManager.dir/src/main.cpp.o -MF CMakeFiles/ContactManager.dir/src/main.cpp.o.d -o CMakeFiles/ContactManager.dir/src/main.cpp.o -c /Users/codex/Developer/ContactManager/backend/src/main.cpp
+
+CMakeFiles/ContactManager.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ContactManager.dir/src/main.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/codex/Developer/ContactManager/backend/src/main.cpp > CMakeFiles/ContactManager.dir/src/main.cpp.i
+
+CMakeFiles/ContactManager.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ContactManager.dir/src/main.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/codex/Developer/ContactManager/backend/src/main.cpp -o CMakeFiles/ContactManager.dir/src/main.cpp.s
 
 # Object files for target ContactManager
 ContactManager_OBJECTS = \
-"CMakeFiles/ContactManager.dir/main.cpp.o"
+"CMakeFiles/ContactManager.dir/src/Contact.cpp.o" \
+"CMakeFiles/ContactManager.dir/src/main.cpp.o"
 
 # External object files for target ContactManager
 ContactManager_EXTERNAL_OBJECTS =
 
-ContactManager: CMakeFiles/ContactManager.dir/main.cpp.o
+ContactManager: CMakeFiles/ContactManager.dir/src/Contact.cpp.o
+ContactManager: CMakeFiles/ContactManager.dir/src/main.cpp.o
 ContactManager: CMakeFiles/ContactManager.dir/build.make
 ContactManager: /opt/homebrew/Cellar/openssl@3/3.4.1/lib/libssl.dylib
 ContactManager: /opt/homebrew/Cellar/openssl@3/3.4.1/lib/libcrypto.dylib
-ContactManager: /usr/local/mysql-connector-c++-9.2.0/lib64/libmysqlcppconn.dylib
-ContactManager: /usr/local/mysql-connector-c++-9.2.0/lib64/libmysqlcppconnx.dylib
+ContactManager: /usr/local/mysql-connector-c++-9.3.0/lib64/libmysqlcppconn.dylib
+ContactManager: /usr/local/mysql-connector-c++-9.3.0/lib64/libmysqlcppconnx.dylib
 ContactManager: CMakeFiles/ContactManager.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/codex/Developer/ContactManager/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ContactManager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/codex/Developer/ContactManager/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ContactManager"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ContactManager.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

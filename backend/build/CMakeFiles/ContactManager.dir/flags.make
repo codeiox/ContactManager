@@ -4,7 +4,7 @@
 # compile CXX with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
 CXX_DEFINES = -DENABLE_DOTENV
 
-CXX_INCLUDES = -I/Users/codex/Developer/ContactManager/backend/Crow/include -I/Users/codex/Developer/ContactManager/backend/asio/asio/include -I/usr/local/mysql-connector-c++-9.2.0/lib64 -I/usr/local/mysql/include -I/usr/local/mysql-connector-c++-9.2/include -isystem /opt/homebrew/Cellar/openssl@3/3.4.1/include
+CXX_INCLUDES = -I/Users/codex/Developer/ContactManager/backend/include -I/Users/codex/Developer/ContactManager/backend/Crow/include -I/Users/codex/Developer/ContactManager/backend/asio/asio/include -I/usr/local/mysql-connector-c++-9.3.0/lib64 -I/usr/local/mysql-connector-c++-9.3.0/include/jdbc -isystem /opt/homebrew/Cellar/openssl@3/3.4.1/include
 
 CXX_FLAGSarm64 = -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk
 
