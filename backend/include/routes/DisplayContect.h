@@ -1,4 +1,7 @@
+#pragma once
+
 #include <iostream>
+
 #include "../database/InsertContact.h"
 #include "crow/middlewares/cors.h"
 
@@ -13,7 +16,7 @@ inline void DisplayContact(crow::App<crow::CORSHandler>& app) {
             std::unique_ptr<sql::ResultSet> res(stml->executeQuery("SELECT * FROM contacts"));
 
             // Creates empty json object that can be filled later
-            crow::json::wvalue contacts_json; 
+            crow::json::wvalue contacts_json;
             int i = 0;
             while (res->next()) {
                 contacts_json[i]["id"] = res->getInt("id");
@@ -22,10 +25,9 @@ inline void DisplayContact(crow::App<crow::CORSHandler>& app) {
                 contacts_json[i]["email"] = res->getString("email");
                 contacts_json[i]["tag"] = res->getString("tag");
                 ++i;
-
-            } 
+            }
             return crow::response(contacts_json);
-        }catch (const std::exception& e) {
+        } catch (const std::exception& e) {
             return crow::response(500, e.what());
         }
     });
